@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>U.S. Presidential Election Rules</title>
+    <!-- 
+        Код написан в одном файле и содержит как HTML, так и CSS. 
+        Он рассказывает об основных правилах президентских выборов в США. 
+    -->
+    <style>
+        /* ----- Общие стили ----- */
+        body {
+            background-color: #f0f0f0; /* Светлый фон для контраста */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #003366; /* Тёмно-синий цвет фона для шапки */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Цвет и оформление заголовков второго уровня */
+        h2 {
+            color: #003366;
+            margin-top: 30px;
+        }
+
+        p {
+            color: #333;
+            line-height: 1.6;
+            margin: 0 0 15px;
+        }
+
+        /* Общий контейнер для содержимого */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        /* Отступ между основными секциями */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        /* Оформление для цитат */
+        blockquote {
+            border-left: 4px solid #999999;
+            margin: 20px;
+            padding-left: 15px;
+            font-style: italic;
+            color: #555555;
+        }
+
+        /* Таблица */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #003366;
+            color: #ffffff;
+        }
+
+        /* Строка изображений */
+        .image-row {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .image-row img {
+            max-width: 30%;
+            height: auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        /* Ссылки */
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка страницы с основным заголовком -->
+    <header>
+        <h1>U.S. Presidential Election Rules</h1>
+    </header>
+
+    <div class="container">
+        <!-- 
+            Раздел "Введение" содержит общее описание президентских выборов.
+            Используем класс .section для логического разделения.
+        -->
+        <section class="section" id="introduction">
+            <h2>Introduction</h2>
+            <p>
+                The <strong style="color: #ff0000;">U.S. presidential election</strong> process is a fundamental aspect 
+                of American democracy. Occurring every four years, these elections determine who will serve as the 
+                nation’s highest executive officer.
+            </p>
+            <p>
+                <em style="color: #3333cc;">Candidates</em> from various political parties campaign across the country, 
+                presenting their platforms to the American public. Voters then cast their ballots on Election Day, 
+                with results ultimately decided by the Electoral College system.
+            </p>
+        </section>
+
+        <!-- 
+            Раздел "Изображения" — согласно требованиям, добавляем 3 изображения 
+            (например, флаг США, карта или символические картинки).
+        -->
+        <section class="section" id="images">
+            <h2>Relevant Images</h2>
+            <div class="image-row">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="U.S. Flag">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/USA_orthographic.svg" alt="Map of the United States">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Us_electoral_college_map_2016_results.png" alt="Electoral College Map Example">
+            </div>
+            <!-- Комментарий: Все три картинки взяты с Wikimedia. Вы можете заменить их на любые другие. -->
+        </section>
+
+        <!-- 
+            Раздел "Электоральный колледж" рассказывает о том, как формируется итоговое решение.
+        -->
+        <section class="section" id="electoral-college">
+            <h2>Electoral College</h2>
+            <p>
+                The Electoral College is a <strong style="color: #ff6600;">unique system</strong> used to determine 
+                the President of the United States. Rather than using a direct popular vote, each state is assigned 
+                a certain number of electors based on its representation in Congress. 
+            </p>
+            <blockquote>
+                “The Electors shall meet in their respective States, and vote by Ballot for President and Vice-President...” 
+                — <em>U.S. Constitution, Article II, Section 1</em>
+            </blockquote>
+            <!-- Комментарий: Используем blockquote для цитаты из Конституции США. -->
+            <p>
+                After the popular vote is counted in each state, the electors typically cast their ballots for the candidate 
+                who won that state’s popular vote. A candidate needs at least 270 electoral votes to win.
+            </p>
+        </section>
+
+        <!-- 
+            Раздел "Процесс голосования" (Voting Process).
+        -->
+        <section class="section" id="voting-process">
+            <h2>Voting Process</h2>
+            <p>
+                Voters must register before participating in elections, with requirements varying by state. 
+                On <strong>Election Day</strong>, citizens cast their ballots at local polling stations, by mail, 
+                or through early voting options in some jurisdictions.
+            </p>
+            <p>
+                In most states, the <em>winner-take-all</em> method is used, meaning the candidate with the highest popular 
+                vote total receives all of that state’s electoral votes. However, two states—Maine and Nebraska—
+                use a district-based method.
+            </p>
+        </section>
+
+        <!-- 
+            Раздел с таблицей ключевых дат или результатов (согласно требованиям).
+        -->
+        <section class="section" id="table">
+            <h2>Key Election Dates</h2>
+            <p>Below is an example table of key dates in a typical U.S. presidential election cycle:</p>
+            <table>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Primary Elections Begin</td>
+                    <td>January - June (Election Year)</td>
+                </tr>
+                <tr>
+                    <td>National Conventions</td>
+                    <td>July - August (Election Year)</td>
+                </tr>
+                <tr>
+                    <td>Election Day</td>
+                    <td>Early November (Election Year)</td>
+                </tr>
+                <tr>
+                    <td>Electoral College Vote</td>
+                    <td>Mid-December (Election Year)</td>
+                </tr>
+                <tr>
+                    <td>Inauguration Day</td>
+                    <td>January 20 (Post-Election Year)</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 
+            Раздел со ссылками на официальные ресурсы.
+        -->
+        <section class="section" id="resources">
+            <h2>Further Reading and Official Resources</h2>
+            <p>
+                For more information about U.S. elections, you can visit 
+                <a href="https://www.usa.gov/election" target="_blank">USA.gov: Voting and Elections</a> 
+                or the 
+                <a href="https://www.fec.gov/" target="_blank">Federal Election Commission (FEC)</a> website.
+            </p>
+        </section>
+    </div>
+</body>
+</html>
