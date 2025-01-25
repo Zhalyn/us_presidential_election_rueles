@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>U.S. Presidential Election Rules</title>
     <!-- 
-        Код написан в одном файле и содержит как HTML, так и CSS. 
-        Он рассказывает об основных правилах президентских выборов в США. 
+       Here I'm putting everything (HTML+CSS) in one file.
+       Please excuse if my comments contain some typos or awkward grammar!
     -->
     <style>
-        /* ----- Общие стили ----- */
+        /* I'm trying to make the page look decent, 
+           but also keep it simple with some minimal styling. */
+
         body {
-            background-color: #f0f0f0; /* Светлый фон для контраста */
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-color: #fafafa; /* Very light grayish background */
         }
-
+        
         header {
-            background-color: #003366; /* Тёмно-синий цвет фона для шапки */
-            color: white;
+            background-color: #003366; /* Dark blue header */
+            color: #ffffff; 
             text-align: center;
             padding: 20px;
         }
@@ -27,34 +29,35 @@
             margin: 0;
         }
 
-        /* Цвет и оформление заголовков второго уровня */
+        /* h2 for main sections, with margin and color style */
         h2 {
             color: #003366;
             margin-top: 30px;
         }
 
+        /* paragraphs: normal color and line spacing */
         p {
             color: #333;
             line-height: 1.6;
             margin: 0 0 15px;
         }
 
-        /* Общий контейнер для содержимого */
+        /* Container for the content with a max width */
         .container {
             width: 90%;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #ffffff;
             box-shadow: 0 0 5px rgba(0,0,0,0.1);
         }
 
-        /* Отступ между основными секциями */
+        /* A basic margin for each section */
         .section {
             margin-bottom: 30px;
         }
 
-        /* Оформление для цитат */
+        /* blockquote style for quotes */
         blockquote {
             border-left: 4px solid #999999;
             margin: 20px;
@@ -63,7 +66,7 @@
             color: #555555;
         }
 
-        /* Таблица */
+        /* table styling for key election dates */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -81,20 +84,21 @@
             color: #ffffff;
         }
 
-        /* Строка изображений */
+        /* row of images next to each other */
         .image-row {
             display: flex;
             justify-content: space-around;
             margin: 20px 0;
         }
 
+        /* images with limited width & a slight shadow */
         .image-row img {
             max-width: 30%;
             height: auto;
             box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
 
-        /* Ссылки */
+        /* link style: color same as header color */
         a {
             color: #003366;
             text-decoration: none;
@@ -103,91 +107,95 @@
         a:hover {
             text-decoration: underline;
         }
+
     </style>
 </head>
 <body>
-    <!-- Шапка страницы с основным заголовком -->
+    <!-- 
+       This is the header section with the page title.
+       I'm using a dark blue background for a typical 'USA' feel :)
+    -->
     <header>
         <h1>U.S. Presidential Election Rules</h1>
     </header>
 
+    <!-- The main container that holds everything else -->
     <div class="container">
-        <!-- 
-            Раздел "Введение" содержит общее описание президентских выборов.
-            Используем класс .section для логического разделения.
-        -->
+        
+        <!-- Section: Introduction -->
         <section class="section" id="introduction">
             <h2>Introduction</h2>
             <p>
-                The <strong style="color: #ff0000;">U.S. presidential election</strong> process is a fundamental aspect 
-                of American democracy. Occurring every four years, these elections determine who will serve as the 
-                nation’s highest executive officer.
+                The U.S. presidential election process is a core part of the american democracy, 
+                occuring every four years. It is how the country decides on 
+                <strong style="color:#ff0000;">their next President</strong>.
             </p>
             <p>
-                <em style="color: #3333cc;">Candidates</em> from various political parties campaign across the country, 
-                presenting their platforms to the American public. Voters then cast their ballots on Election Day, 
-                with results ultimately decided by the Electoral College system.
+                <em style="color:#3333cc;">Candidates</em> from all kinds of political parties campaign 
+                across the U.S., talking to voters and explaining their plans. Eventually, people vote 
+                on Election Day, and the Electoral College does the final determination (we’ll see next).
             </p>
         </section>
 
         <!-- 
-            Раздел "Изображения" — согласно требованиям, добавляем 3 изображения 
-            (например, флаг США, карта или символические картинки).
+            Section: Relevant Images
+            Using the 3 images: 
+            1) US Flag from Wikipedia
+            2) Map of the US (Amazon link)
+            3) Electoral College Map Example (uoguelph)
         -->
         <section class="section" id="images">
             <h2>Relevant Images</h2>
             <div class="image-row">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="U.S. Flag">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/USA_orthographic.svg" alt="Map of the United States">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Us_electoral_college_map_2016_results.png" alt="Electoral College Map Example">
+                <img src="https://m.media-amazon.com/images/I/81oHCT7TsuL._AC_SX679_.jpg" alt="Map of the US">
+                <img src="https://news.uoguelph.ca/wp-content/uploads/2020/11/us-electoral-map-1000x654.jpg" alt="Electoral College Map Example">
             </div>
-            <!-- Комментарий: Все три картинки взяты с Wikimedia. Вы можете заменить их на любые другие. -->
+            <!-- 
+               Note: these links might break or change, 
+               so you might use different images if needed.
+            -->
         </section>
 
-        <!-- 
-            Раздел "Электоральный колледж" рассказывает о том, как формируется итоговое решение.
-        -->
+        <!-- Section: Electoral College -->
         <section class="section" id="electoral-college">
             <h2>Electoral College</h2>
             <p>
-                The Electoral College is a <strong style="color: #ff6600;">unique system</strong> used to determine 
-                the President of the United States. Rather than using a direct popular vote, each state is assigned 
-                a certain number of electors based on its representation in Congress. 
+                The Electoral College is a <strong style="color: #ff6600;">unique system</strong> used by the U.S. 
+                Instead of relying solely on the popular vote, each state is assigned a number of electors 
+                based on its representation in Congress.
             </p>
+            <!-- 
+               Blockquote for a snippet from the US Constitution 
+               (some folks might not realize how old these rules are).
+            -->
             <blockquote>
                 “The Electors shall meet in their respective States, and vote by Ballot for President and Vice-President...” 
                 — <em>U.S. Constitution, Article II, Section 1</em>
             </blockquote>
-            <!-- Комментарий: Используем blockquote для цитаты из Конституции США. -->
             <p>
-                After the popular vote is counted in each state, the electors typically cast their ballots for the candidate 
-                who won that state’s popular vote. A candidate needs at least 270 electoral votes to win.
+                A candidate typically needs 270 electoral votes to win. States mostly give 
+                <em>all</em> their votes to the top candidate for that state, but Maine and Nebraska do it differently.
             </p>
         </section>
 
-        <!-- 
-            Раздел "Процесс голосования" (Voting Process).
-        -->
+        <!-- Section: Voting Process -->
         <section class="section" id="voting-process">
             <h2>Voting Process</h2>
             <p>
-                Voters must register before participating in elections, with requirements varying by state. 
-                On <strong>Election Day</strong>, citizens cast their ballots at local polling stations, by mail, 
-                or through early voting options in some jurisdictions.
+                Every citizen who wishes to vote must be properly registred, which is governed by each state’s rules. 
+                On <strong>Election Day</strong>, Americans cast their ballots in person, by mail, or even early in some states.
             </p>
             <p>
-                In most states, the <em>winner-take-all</em> method is used, meaning the candidate with the highest popular 
-                vote total receives all of that state’s electoral votes. However, two states—Maine and Nebraska—
-                use a district-based method.
+                The popular vote in most states is "winner-take-all," awarding the entire set of electoral votes 
+                to the candidate who leads in that state’s popular count.
             </p>
         </section>
 
-        <!-- 
-            Раздел с таблицей ключевых дат или результатов (согласно требованиям).
-        -->
+        <!-- Section: Table of Key Election Dates -->
         <section class="section" id="table">
             <h2>Key Election Dates</h2>
-            <p>Below is an example table of key dates in a typical U.S. presidential election cycle:</p>
+            <p>Here is a quick example table of the main events in a typical U.S. presidential race:</p>
             <table>
                 <tr>
                     <th>Event</th>
@@ -216,18 +224,17 @@
             </table>
         </section>
 
-        <!-- 
-            Раздел со ссылками на официальные ресурсы.
-        -->
+        <!-- Section: Official Resources with links -->
         <section class="section" id="resources">
             <h2>Further Reading and Official Resources</h2>
             <p>
-                For more information about U.S. elections, you can visit 
-                <a href="https://www.usa.gov/election" target="_blank">USA.gov: Voting and Elections</a> 
-                or the 
-                <a href="https://www.fec.gov/" target="_blank">Federal Election Commission (FEC)</a> website.
+                If you want to read more about U.S. elections, 
+                check <a href="https://www.usa.gov/election" target="_blank">USA.gov: Voting and Elections</a> 
+                or visit the 
+                <a href="https://www.fec.gov/" target="_blank">Federal Election Commission (FEC)</a>.
             </p>
         </section>
-    </div>
+
+    </div> <!-- end .container -->
 </body>
 </html>
